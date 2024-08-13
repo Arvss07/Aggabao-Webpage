@@ -1,0 +1,85 @@
+:root {
+    --background: rgb(238, 238, 238);
+    --secondary-bg: rgb(104, 109, 118);
+    --primary: rgb(55, 58, 64);
+    --secondary: rgb(252, 252, 252);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 0 0 0 15px;
+    margin: 0;
+    
+
+}
+
+.header-div {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.title-page {
+    font-family: Helvetica, Arial;
+    font-weight: 1000;
+    color: var(--primary);
+}
+
+header img {
+    height: 50px;
+    object-fit: cover;
+    padding-right: 20px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0  auto;
+}
+
+.profile-photo {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 125px;
+    border: 2px solid var(--secondary-bg);
+}
+
+.about-me-title {
+    padding-left:20px;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.about-content {
+    padding-left:20px;
+    color: var(--primary);
+}
+
+.social-group {
+    display: flex;
+    padding-left: 20px;
+}
+
+.social-facebook, .social-linkedin, .social-github {
+    height: 30px;
+    object-fit: cover;
+    padding-right: 20px;
+}
+
+
+
