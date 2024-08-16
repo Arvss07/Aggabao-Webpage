@@ -75,6 +75,8 @@ a:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 
@@ -242,12 +244,6 @@ section:target {
     gap: var(--padding);
 }
 
-#projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--padding);
-}
 
 footer {
     position: fixed;

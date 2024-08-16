@@ -1,10 +1,14 @@
 @media screen and (max-width: 768px) {
   .main-container {
     flex-direction: column;
+    width: 100%;
+    padding: 10px;
+
   }
 
   .profile-photo {
     margin-bottom: 20px;
+    height: 200px;
   }
 
   .about-me-title {
@@ -32,6 +36,7 @@
 
   .content-section .card {
     padding: 15px;
+    box-sizing: border-box;
   }
 
   .card-title {
@@ -51,7 +56,9 @@
   }
 
   .title-page {
-    font-size: 20px;
+    font-size: 12px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   header img {
@@ -63,70 +70,101 @@
     margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 480px) {
-    .main-container {
-      width: 90%;
-    }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 15px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+}
 
-    .profile-photo {
-      height: 200px;
-    }
+@media screen and (max-width: 480px) {
+  .main-container {
+    width: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
 
-    .about-me-title {
-      font-size: 20px;
-    }
+  .profile-photo {
+    height: 150px;
+  }
 
-    .about-content {
-      font-size: 16px;
-    }
+  .about-me-title {
+    font-size: 20px;
+  }
 
-    .social-group {
-      display: flex;
-      justify-content: center;
-    }
+  .about-content {
+    font-size: 16px;
+  }
 
-    .social-facebook,
-    .social-linkedin,
-    .social-github {
-      height: 25px;
-    }
+  .social-group {
+    display: flex;
+    justify-content: center;
+  }
 
-    .bottom-container {
-      width: 100%;
-    }
+  .social-facebook,
+  .social-linkedin,
+  .social-github {
+    height: 20px;
+  }
 
-    .content-section .card {
-      padding: 10px;
-    }
+  .bottom-container {
+    width: 100%;
+  }
 
-    .card-title {
-      font-size: 1.2em;
-    }
+  .content-section .card {
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
-    .card p {
-      font-size: 0.8em;
-    }
+  .card-title {
+    font-size: 1.2em;
+  }
 
-    .card a {
-      margin-top: 10px;
-    }
+  .card p {
+    font-size: 0.8em;
+  }
 
-    .header-div {
-      height: 40px;
-    }
+  .card a {
+    margin-top: 10px;
+  }
 
-    .title-page {
-      font-size: 18px;
-    }
+  .header-div {
+    height: 40px;
+  }
 
-    header img {
-      height: 30px;
-    }
+  .title-page {
+    font-size: 10px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
 
-    .navbar {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
+  header img {
+    height: 30px;
+  }
 
+  .navbar {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 14px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
   }
 }
