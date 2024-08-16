@@ -148,6 +148,7 @@ header img {
     padding-left: var(--padding);
     color: var(--color-primary);
     font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
 }
 
 .social-group {
